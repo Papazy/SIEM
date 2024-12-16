@@ -34,7 +34,12 @@ Panduan ini akan membantu Anda untuk menjalankan project SIEM di mesin lokal men
 5. **Akses Aplikasi:**
    - Jalankan Apache dan MySQL di XAMPP.
    - Buka browser dan akses `http://localhost/SIEM` (atau `http://localhost/SIEM/SIEM`).
-
+   - Untuk login, gunakan 
+   ```
+   username: admin
+   password: admin
+   ```
+   
    Anda sekarang dapat mengakses aplikasi.
 
 ## Pemecahan Masalah
