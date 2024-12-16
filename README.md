@@ -9,31 +9,31 @@ Panduan ini akan membantu Anda untuk menjalankan project SIEM di mesin lokal men
 
 ## Langkah-langkah Setup
 
+1. **Buka`htdocs` XAMPP:**
+   - Masuk ke `C:\xampp\htdocs` atau direktori `htdocs` XAMPP Anda.
+
 1. **Unduh Project:**
    - Clone atau unduh file project dari repositori GitHub.
 
-2. **Pindahkan File ke `htdocs` XAMPP:**
-   - Salin folder project ke `C:\xampp\htdocs` atau direktori XAMPP Anda.
+   ```
+   git clone https://github.com/Papazy/SIEM.git
+   ```
+
+
 
 3. **Impor Database:**
    - Buka **phpMyAdmin** (http://localhost/phpmyadmin).
-   - Buat database baru (misalnya `siem`).
+   - Buat database baru (misalnya `data_penduduk`).
    - Pilih database baru, lalu klik tab **Import**.
    - Pilih file `data_penduduk.sql` dan klik **Go** untuk mengimpor database.
 
 4. **Konfigurasi Koneksi Database:**
-   - Buka folder project dan cari file konfigurasi (biasanya `config.php`).
-   - Perbarui pengaturan koneksi database sebagai berikut:
-     ```php
-     define('DB_SERVER', 'localhost');
-     define('DB_USERNAME', 'root');
-     define('DB_PASSWORD', '');
-     define('DB_DATABASE', 'siem');
-     ```
+   - Buka folder 'inc' dan cari file konfigurasi (`koneksi.php`).
+   - Perbarui pengaturan koneksi database
 
 5. **Akses Aplikasi:**
    - Jalankan Apache dan MySQL di XAMPP.
-   - Buka browser dan akses `http://localhost/SIEM` (perhatikan letak file index.php).
+   - Buka browser dan akses `http://localhost/SIEM` (atau `http://localhost/SIEM/SIEM`).
 
    Anda sekarang dapat mengakses aplikasi.
 
